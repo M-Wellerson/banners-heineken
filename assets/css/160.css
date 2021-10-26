@@ -1,0 +1,17 @@
+.banner__160x600 {
+    position: relative;
+    width: 160px;
+    height: 600px;
+    background-color: #ccc;
+}
+
+.logo__160 {
+    width: 137px;
+    height: 32px;
+}
+
+.btn-160 {
+    width: 111px;
+    height: 24px;
+    font-size: 11px;
+}

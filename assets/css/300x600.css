@@ -1,0 +1,15 @@
+.banner__300x600 {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    background-color: #ccc;
+}
+
+.banner__300x600-info {
+    display: block;
+    text-align: center;
+}
+
+.banner__300x600-info .btn {
+    margin-top: 1.5rem;
+}
