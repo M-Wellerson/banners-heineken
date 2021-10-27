@@ -5,6 +5,9 @@
     width: 320px;
     height: 50px;
     background-color: #ccc;
+    background-image: url(../img/320x50.jpg);
+    background-size: cover;
+    overflow: hidden;
 }
 
 .logo-320x50 {
@@ -26,6 +29,7 @@
     justify-items: center;
     align-items: center;
 }
+
 .container-320x50-tab2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -36,12 +40,108 @@
 .shape-320x50 {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: -125px;
     width: 100%;
     height: 100%;
     background-color: var(--primary-color);
     z-index: 99;
     clip-path: polygon(78% 0, 100% 0, 100% 100%, 60% 100%);
+    transition: all 3s ease;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-name: shape-anime;
+}
+
+@keyframes shape-anime {
+    3%, 99% {
+        right: 0px;
+    }
+}
+
+.banner__320x50--primeiro-ato {
+    position: absolute;
+    left: -300px;
+    top: 15px;
+    transition: all 3s ease;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-name: shape-anime-primeiro-ato;
+    opacity: 1;
+}
+
+@keyframes shape-anime-primeiro-ato {
+    7%, 50% {
+        left: 0px;
+    }
+    51%{
+        left: -300px;
+        opacity: 0;
+    }
+}
+
+.banner__320x50--bt-animate {
+    position: absolute;
+    right: -130px;
+    top: 15px;
+    transition: all 3s ease;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-name: shape-anime-bt;
+    opacity: 1;
+}
+
+@keyframes shape-anime-bt {
+    15%, 50% {
+        right: 15px;
+    }
+    51%{
+        right: -130px;
+        opacity: 0;
+    }
+}
+.banner__320x50--segundo-ato {
+    position: absolute;
+    left: -320px;
+    top: 0px;
+    width: 320px;
+    /* transition: all 3s ease; */
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-name: shape-anime-segundo-ato;
+}
+@keyframes shape-anime-segundo-ato {
+    70%, 99% {
+        left: 0px;
+    }
+}
+
+.banner__320x50--mini-slider {
+    width: 300px;
+    height: 90px;
+    background-image: url(../latas/Bebidas.png);
+    background-repeat: repeat-x;
+    background-position: calc( var(--count) * -5 ) bottom;
+    background-size: auto 40px;
+    width: 150px;
+    height: 40px;
+    position:absolute;
+    top: 5px;
+    right: -300px;
+    z-index: 999;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-name: shape-anime-mini-slider;
+    opacity: 1;
+
+}
+@keyframes shape-anime-mini-slider {
+    70%, 99% {
+        right: 0px;
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
 }
 
 .container-320x50-tab2 p {

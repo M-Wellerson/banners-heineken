@@ -43,7 +43,7 @@
   height: 90px;
   background-image: url(../latas/Bebidas.png);
   background-repeat: repeat-x;
-  background-position: calc( var(--count) * -14 ) bottom;
+  background-position: calc( var(--count) * -16 ) bottom;
   background-size: auto 90px;
 }
 
