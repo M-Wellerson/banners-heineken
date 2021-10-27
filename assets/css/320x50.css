@@ -1,4 +1,4 @@
-.banner__320x50-tab1 {
+.banner__320x50-tab1, .banner__320x50-tab2 {
     display: grid;
     align-items: center;
     position: relative;
@@ -26,6 +26,12 @@
     justify-items: center;
     align-items: center;
 }
+.container-320x50-tab2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
 
 .shape-320x50 {
     position: absolute;
@@ -36,4 +42,9 @@
     background-color: var(--primary-color);
     z-index: 99;
     clip-path: polygon(78% 0, 100% 0, 100% 100%, 60% 100%);
+}
+
+.container-320x50-tab2 p {
+    text-align: left !important;
+    line-height: 10px;
 }
