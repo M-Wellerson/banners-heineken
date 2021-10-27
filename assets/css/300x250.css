@@ -2,7 +2,8 @@
     position: relative;
     width: 300px;
     height: 250px;
-    background-color: #ccc;
+    background-image: url(../img/300x250.jpg);
+    background-repeat: no-repeat;
 }
 
 .shape__300x250 {

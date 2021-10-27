@@ -2,7 +2,9 @@
     position: relative;
     width: 300px;
     height: 600px;
-    background-color: #ccc;
+    overflow: hidden;
+    background-image: url(../img/300x600.jpg);
+    background-repeat: no-repeat;
 }
 
 .banner__300x600-info {
@@ -12,4 +14,31 @@
 
 .banner__300x600-info .btn {
     margin-top: 1.5rem;
+}
+
+.slider__300x600 {
+    width: 2500px;
+    animation: linear infinite;
+    -webkit-animation: linear infinite;
+    animation-name: run;
+    -webkit-animation-name: run;
+    animation-duration: 25s;
+    -webkit-animation-duration: 25s;
+}
+
+@-webkit-keyframes run {
+    0% {
+      right: 0px;
+    }
+    50% {
+      right: 2500px;
+    }
+    100% {
+      right: 0;
+    }
+}
+
+.slider__300x600 img {
+    display: inline;
+    margin: 2.5rem;
 }
