@@ -5,6 +5,9 @@
     width: 728px;
     height: 90px;
     background-color: #ccc;
+    background-image: url(../img/728x90.jpg);
+    background-size: cover;
+    overflow: hidden;
 }
 
 .container-728x90 {
@@ -12,14 +15,25 @@
     grid-template-columns: 2fr 150px 1fr;
     align-items: center;
     justify-items: center;
+    position: absolute;
+    left: -750px;
+    top: 0;
+    width: 100%;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-name: container-728-anime;
+}
+@keyframes container-728-anime {
+    7%,100%{
+        left: 0px;
+    }
 }
 
 .container__inner-728x90 {
     display: grid;
-    grid-template-areas:
-        "logo logo title title"
-        "text text text text";
+    grid-template-areas: "logo logo title title" "text text text text";
     grid-column-gap: 1rem;
+
 }
 
 .logo-728x90 {
@@ -27,11 +41,13 @@
     height: 49px;
     grid-area: logo;
 }
+
 .title-728x90 {
     display: grid;
     grid-area: title;
     align-self: end;
 }
+
 .text-728x90 {
     grid-area: text;
 }
@@ -47,6 +63,29 @@
     font-size: 11px;
 }
 
+.slider__728x90 {
+    width: 190px;
+    height: 70px;
+    background-image: url(../latas/Bebidas.png);
+    background-repeat: repeat-x;
+    background-position: calc( var(--count) * -5) bottom;
+    background-size: auto 70px;
+    opacity: 0;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-name: slider-728-anime;
+    position: absolute;
+    right: -200px;
+    top: 10px;
+}
+@keyframes slider-728-anime {
+    0% { opacity: 0; }
+    20%,100%{
+        opacity: 1;
+        right: 0px;
+    }
+}
+
 .shape-728x90 {
     position: absolute;
     bottom: 0;
@@ -55,4 +94,15 @@
     background-color: var(--primary-color);
     z-index: 99;
     clip-path: polygon(85% 0, 100% 0, 100% 100%, 70% 100%);
+    transition: all 3s ease;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-name: shape-728-anime;
+    right: -250px;
+}
+
+@keyframes shape-728-anime {
+    7%,100%{
+        right: 0px;
+    }
 }
