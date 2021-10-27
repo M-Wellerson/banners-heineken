@@ -112,10 +112,10 @@
     animation-name: shape-anime-segundo-ato;
 }
 @keyframes shape-anime-segundo-ato {
-    0%, 65% {
+    0%, 55% {
         left: -320px;
     }
-    66%, 99% {
+    56%, 99% {
         left: 0px;
     }
 }
@@ -140,8 +140,8 @@
 
 }
 @keyframes shape-anime-mini-slider {
-    0%, 65% { right: -300px; }
-    66%, 100% {
+    0%, 55% { right: -300px; }
+    56%, 100% {
         right: 0px;
         opacity: 1;
     }
