@@ -18,15 +18,36 @@
 
 .slider__300x600 {
     width: 2500px;
-    animation: linear infinite;
+    /* animation: linear infinite;
     -webkit-animation: linear infinite;
     animation-name: run;
     -webkit-animation-name: run;
     animation-duration: 25s;
-    -webkit-animation-duration: 25s;
+    -webkit-animation-duration: 25s; */
+    /* right: calc( var(--count) * 2 ) ; */
+    height: 330px;
+    background-image: url(../latas/Bebidas.png);
+    background-repeat: repeat-x;
+    background-position: calc( var(--count) * -14 ) bottom;
 }
 
-@-webkit-keyframes run {
+.slider_160x600 {
+  width: 160px;
+  height: 330px;
+  background-image: url(../latas/Bebidas.png);
+  background-repeat: repeat-x;
+  background-position: calc( var(--count) * -14 ) bottom;
+}
+.slider_300x250 {
+  width: 300px;
+  height: 90px;
+  background-image: url(../latas/Bebidas.png);
+  background-repeat: repeat-x;
+  background-position: calc( var(--count) * -14 ) bottom;
+  background-size: auto 90px;
+}
+
+/* @-webkit-keyframes run {
     0% {
       right: 0px;
     }
@@ -36,7 +57,7 @@
     100% {
       right: 0;
     }
-}
+} */
 
 .slider__300x600 img {
     display: inline;
